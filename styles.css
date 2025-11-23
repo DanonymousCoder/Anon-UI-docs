@@ -1,0 +1,16 @@
+nav,
+main,
+.hero,
+.features {
+    width: 80%;
+}
+
+nav a {
+    border: none !important;
+    outline: none !important;
+    color: #FFFFFF !important;
+}
+
+.feature {
+    min-height: 200px;
+}
