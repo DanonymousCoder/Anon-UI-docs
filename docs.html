@@ -3,49 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
     <link rel="stylesheet" href="https://unpkg.com/anon_ui/dist/anon_ui.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="docs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     
-    <title>Docs | Anon UI</title>
+    <title>Documentation | Anon UI</title>
 </head>
 <body>
-    <div class="container h-screen w-full bg-secondary">
-        <div class="nav-cont w-full bg-neutral flex justify-center">
+    <div class="docs-container h-screen w-full bg-secondary">
+        <div class="docs-nav w-full bg-neutral">
             <nav class="flex justify-between items-center">
-            <div class="logo">
-                <h1 class="text-2xl">Anon UI</h1>
-            </div>
+                <div class="logo-wrapper">
+                    <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="6" fill="url(#gradient)"/>
+                        <path d="M8 20L16 8L24 20H8Z" fill="white" opacity="0.9"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#6366f1"/>
+                                <stop offset="100%" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h1 class="text-2xl bold">Anon UI</h1>
+                </div>
 
-            <ul class="nav-links">
-                <li><a href="/docs.html" class="bg-accent px-6 py-3 rounded-lg text-lg text-tertiary semibold">Get Started</a></li>
-            </ul>
-        </nav>
+                <ul class="nav-links">
+                    <li><a href="/index.html" class="nav-link text-lg">Home</a></li>
+                    <li><a href="https://github.com/DanonymousCoder/Anon-UI" class="nav-link text-lg">GitHub</a></li>
+                    <li><a href="#installation" class="bg-accent px-6 py-3 rounded-lg text-lg text-tertiary bold btn-primary">Get Started</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <aside class="flex justify-center items-center">
-            <ul class="flex flex-column gap-6">
-                <li><a href="#" class="text-2xl text-tertiary">Installation</a></li>
-                <li><a href="https://github.com/DanonymousCoder/Anon-UI/blob/main/README.md" class="text-2xl">Variables</a></li>
-                <li><a href="https://github.com/DanonymousCoder/Anon-UI/blob/main/README.md" class="text-2xl">Colors</a></li>
-            </ul>
+        <aside class="docs-sidebar">
+            <div class="sidebar-content">
+                <h3 class="sidebar-title text-lg bold">Documentation</h3>
+                <ul class="sidebar-nav flex flex-column gap-4">
+                    <li class="sidebar-section">
+                        <a href="#installation" class="sidebar-link active text-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            Installation
+                        </a>
+                    </li>
+                    <li class="sidebar-section">
+                        <a href="https://github.com/DanonymousCoder/Anon-UI/blob/main/README.md" class="sidebar-link text-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6"></path>
+                                <path d="M1 12h6m6 0h6"></path>
+                            </svg>
+                            Variables
+                        </a>
+                    </li>
+                    <li class="sidebar-section">
+                        <a href="https://github.com/DanonymousCoder/Anon-UI/blob/main/README.md" class="sidebar-link text-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                            Colors
+                        </a>
+                    </li>
+                    <li class="sidebar-section">
+                        <a href="https://github.com/DanonymousCoder/Anon-UI/blob/main/README.md" class="sidebar-link text-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            Utilities
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </aside>
 
-        <main class="p-6 flex flex-column gap-8">
-            <div class="cdn">
-                <h3 class="text-3xl">CDN</h3>
-                <p class="code text-xl rounded-lg">https://unpkg.com/anon_ui/dist/anon_ui.css</p>
+        <main class="docs-main p-8">
+            <div class="docs-header">
+                <h1 class="docs-page-title text-4xl bold">Getting Started</h1>
+                <p class="docs-subtitle text-xl">Install Anon UI and start building beautiful interfaces in minutes.</p>
             </div>
 
-            <div class="npm">
-                <h3 class="text-3xl">NPM</h3>
-                
-                <p class="code text-xl rounded-lg">npm install anon_ui</p>
+            <div class="docs-content flex flex-column gap-8">
+                <section id="installation" class="doc-section">
+                    <div class="section-header">
+                        <h2 class="section-title text-3xl bold">CDN Installation</h2>
+                        <p class="section-desc text-lg">The quickest way to get started. Simply add the CDN link to your HTML.</p>
+                    </div>
+                    
+                    <div class="code-block-wrapper">
+                        <div class="code-block-header">
+                            <span class="code-lang">HTML</span>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('https://unpkg.com/anon_ui/dist/anon_ui.css')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre class="code-block"><code>&lt;link rel="stylesheet" href="https://unpkg.com/anon_ui/dist/anon_ui.css"&gt;</code></pre>
+                    </div>
+                </section>
+
+                <section class="doc-section">
+                    <div class="section-header">
+                        <h2 class="section-title text-3xl bold">NPM Installation</h2>
+                        <p class="section-desc text-lg">For production projects, install via NPM for better version control.</p>
+                    </div>
+                    
+                    <div class="code-block-wrapper">
+                        <div class="code-block-header">
+                            <span class="code-lang">BASH</span>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('npm install anon_ui')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre class="code-block"><code>npm install anon_ui</code></pre>
+                    </div>
+
+                    <div class="info-box">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <p>After installation, import the CSS file in your project:</p>
+                        <pre class="inline-code">import 'anon_ui/dist/anon_ui.css';</pre>
+                    </div>
+                </section>
+
+                <section class="doc-section">
+                    <div class="section-header">
+                        <h2 class="section-title text-3xl bold">Quick Start Example</h2>
+                        <p class="section-desc text-lg">Here's a simple example to get you started.</p>
+                    </div>
+                    
+                    <div class="code-block-wrapper">
+                        <div class="code-block-header">
+                            <span class="code-lang">HTML</span>
+                            <button class="copy-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                Copy
+                            </button>
+                        </div>
+                        <pre class="code-block"><code>&lt;div class="flex justify-center items-center bg-accent p-6 rounded-lg"&gt;
+  &lt;h1 class="text-2xl bold"&gt;Hello, Anon UI!&lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </section>
             </div>
         </main>
-
     </div>
 </body>
 </html>
