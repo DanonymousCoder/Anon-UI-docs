@@ -3,87 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/anon_ui/dist/anon_ui.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="docs.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- 
+        Link to css file
+    -->
     
+    <link rel="stylesheet" href="./docs.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
     <title>Documentation | Anon UI</title>
 </head>
 <body>
-    <div class="docs-container h-screen w-full bg-secondary">
-        <div class="docs-nav w-full bg-neutral">
-            <nav class="flex justify-between items-center">
-                <div class="logo-wrapper">
-                    <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
-                        <rect width="32" height="32" rx="6" fill="url(#gradient)"/>
-                        <path d="M8 20L16 8L24 20H8Z" fill="white" opacity="0.9"/>
-                        <defs>
-                            <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
-                                <stop offset="0%" stop-color="#6366f1"/>
-                                <stop offset="100%" stop-color="#8b5cf6"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <h1 class="text-2xl bold">Anon UI</h1>
-                </div>
+    <div class="container">
+        <nav>
+               <div class="nav-inner">
+                    <div class="logo-wrapper">
+                        <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="6" fill="url(#gradient)"/>
+                            <path d="M8 20L16 8L24 20H8Z" fill="white" opacity="0.9"/>
+                            <defs>
+                                <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366f1"/>
+                                    <stop offset="100%" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <h1 class="logo-txt">Anon UI</h1>
+                    </div>
 
-                <ul class="nav-links">
-                    <li><a href="/index.html" class="nav-link text-lg">Home</a></li>
-                    <li><a href="https://github.com/DanonymousCoder/Anon-UI" class="nav-link text-lg">GitHub</a></li>
-                    <li><a href="#installation" class="bg-accent px-6 py-3 rounded-lg text-lg text-tertiary bold btn-primary">Get Started</a></li>
-                </ul>
-            </nav>
-        </div>
+                    <ul class="nav-links">
+                        <li><a href="./index.html" class="btn-secondary">Home</a></li>
+                        <li><a href="#" class="btn-secondary">GitHub</a></li>
+                        <li><a href="#" class="btn-primary">Get Started</a></li>
+                    </ul>
+               </div>
+        </nav>
 
         <aside class="docs-sidebar">
             <div class="sidebar-content">
-                <h3 class="sidebar-title text-lg bold">Documentation</h3>
-                <ul class="sidebar-nav flex flex-column gap-4">
-                    <li class="sidebar-section">
-                        <a href="#installation" class="sidebar-link active text-lg">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="12" y1="16" x2="12" y2="12"></line>
-                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                            </svg>
-                            Installation
-                        </a>
-                    </li>
-                    <li class="sidebar-section">
-                        <a href="https://github.com/DanonymousCoder/Anon-UI/blob/main/README.md" class="sidebar-link text-lg">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="M12 1v6m0 6v6"></path>
-                                <path d="M1 12h6m6 0h6"></path>
-                            </svg>
-                            Variables
-                        </a>
-                    </li>
-                    <li class="sidebar-section">
-                        <a href="https://github.com/DanonymousCoder/Anon-UI/blob/main/README.md" class="sidebar-link text-lg">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <circle cx="12" cy="12" r="3"></circle>
-                            </svg>
-                            Colors
-                        </a>
-                    </li>
-                    <li class="sidebar-section">
-                        <a href="https://github.com/DanonymousCoder/Anon-UI/blob/main/README.md" class="sidebar-link text-lg">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                            Utilities
-                        </a>
-                    </li>
-                </ul>
+                <h2 class="sidebar-title">Documentation</h2>
+
+                <div class="aside-main"> 
+                    <div class="get-started">
+                        <h3>Getting Started</h3>
+                        <ul class="sidebar-nav">
+                            <li><a href="#" class="sidebar-link" id="installation">Installation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="get-started">
+                        <h3>Spacing</h3>
+                        <ul class="sidebar-nav">
+                            <li><a href="#" class="sidebar-link" id="padding">padding</a></li>
+                            <li><a href="#" class="sidebar-link" id="margin">margin</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="get-started">
+                        <h3>Backgrounds</h3>
+                        <ul class="sidebar-nav">
+                            <li><a href="#" class="sidebar-link" id="background-clip">background-clip</a></li>
+                            <li><a href="#" class="sidebar-link" id="background-position">background-position</a></li>
+                            <li><a href="#" class="sidebar-link" id="background-repeat">background-repeat</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </aside>
 
-        <main class="docs-main p-8">
-            <div class="docs-header">
+        <div class="main-wrapper">
+            <main id="installation">
+                    <div class="docs-header">
                 <h1 class="docs-page-title text-4xl bold">Getting Started</h1>
                 <p class="docs-subtitle text-xl">Install Anon UI and start building beautiful interfaces in minutes.</p>
             </div>
@@ -164,7 +155,103 @@
                     </div>
                 </section>
             </div>
-        </main>
+        
+            </main>
+
+            <main id="padding" class="main-hide">
+                <div class="top">
+                    <p>Spacing</p>
+                    <h1>Padding Main</h1>
+                    <h5 class="docs-subtitle">Utilities for controlling an element's padding.</h5>
+                </div>
+
+                <div class="utilities-display">
+                    <ul class="utility-classes">
+                        <h2>Class</h2>
+                        <li>px-number</li>
+                        <li>py-number</li>
+                        <li>pt-number</li>
+                        <li>pb-number</li>
+                        <li>pl-number</li>
+                        <li>pr-number</li>
+                        <li>p-0</li>
+                        <li>p-1</li>
+                        <li>p-2</li>
+                        <li>p-3</li>
+                        <li>p-4</li>
+                        <li>p-5</li>
+                        <li>p-6</li>
+                        <li>p-7</li>
+                        <li>p-8</li>
+                        <li>p-9</li>
+                        <li>p-10</li>
+                        <li>p-11</li>
+                        <li>p-12</li>
+                        <li>p-13</li>
+                        <li>p-14</li>
+                        <li>p-15</li>
+                        <li>p-16</li>
+                        <li>p-17</li>
+                        <li>p-18</li>
+                        <li>p-19</li>
+                        <li>p-20</li>
+                </ul>
+                <ul class="utility-styles">
+                    <h2>Styles</h2>
+                    <li>padding-left,-right: var(--space-number);</li>
+                    <li>padding-top,-bottom: var(--space-number);</li>
+                    <li>padding-top: var(--space-number);</li>
+                    <li>padding-bottom: var(--space-number);</li>
+                    <li>padding-left: var(--space-number);</li>
+                    <li>padding-right: var(--space-number);</li>
+                    <li>padding: 0;</li>
+                    <li>padding: var(--space-1); /* 0.25rem(4px) */</li>
+                    <li>padding: var(--space-2); /* 0.5rem(8px) */</li>
+                    <li>padding: var(--space-3); /* 0.75rem(12px) */</li>
+                    <li>padding: var(--space-4); /* 1rem(16px) */</li>
+                    <li>padding: var(--space-5); /* 1.25rem(20px) */</li>
+                    <li>padding: var(--space-6); /* 1.5rem(24px) */</li>
+                    <li>padding: var(--space-7); /* 1.75rem(28px) */</li>
+                    <li>padding: var(--space-8); /* 2rem(32px) */</li>
+                    <li>padding: var(--space-9); /* 2.25rem(36px) */</li>
+                    <li>padding: var(--space-10); /* 2.5rem(40px) */</li>
+                    <li>padding: var(--space-11); /* 2.75rem(44px) */</li>
+                    <li>padding: var(--space-12); /* 3rem(48px) */</li>
+                    <li>padding: var(--space-13); /* 3.25rem(52px) */</li>
+                    <li>padding: var(--space-14); /* 3.5rem(56px) */</li>
+                    <li>padding: var(--space-15); /* 3.75rem(60px) */</li>
+                    <li>padding: var(--space-16); /* 4rem(64px) */</li>
+                    <li>padding: var(--space-17); /* 4.25rem(68px) */</li>
+                    <li>padding: var(--space-18); /* 4.5rem(72px) */</li>
+                    <li>padding: var(--space-19); /* 4.75rem(76px) */</li>
+                    <li>padding: var(--space-20); /* 5rem(80px) */</li>
+                </ul>
+                </div>
+            </main>
+
+            <main id="margin" class="main-hide">
+                <h1>Margin Main</h1>
+            </main>
+
+            <main id="bg-clip" class="main-hide">
+                <h1>Background-Clip Main</h1>
+            </main>
+
+            <main id="bg-position" class="main-hide">
+
+            </main>
+
+            <main id="bg-repeat" class="main-hide">
+
+            </main>
+        </div>
     </div>
+
+
+    <!--
+        Link to Script
+    -->
+
+    <script src="script.js"></script>
 </body>
 </html>
