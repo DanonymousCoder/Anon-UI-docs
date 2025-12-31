@@ -20,14 +20,14 @@ asideLinks.forEach(asideLink => {
 })
 
 
-let text = "Work in progress", speed = 50, i = 0, un_i = 19;
+let text = "Work in progress ", speed = 150, i = 0, un_i = 17;
 
 function displayText() {
     if (i < text.length) {
         wipText.textContent += text.charAt(i);
         i++;
-         if (i == 19) {
-            un_i = 19;
+         if (i == 17) {
+            un_i = 17;
             removeText();
         }
         setTimeout(displayText, speed);
