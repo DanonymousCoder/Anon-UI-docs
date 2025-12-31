@@ -10,90 +10,63 @@
     <title>Anon UI - Modern CSS Framework</title>
 </head>
 <body>
-    <div class="container h-screen w-full flex flex-column items-center bg-secondary">
-        <nav class="navbar flex justify-between items-center">
-            <div class="logo-wrapper">
-                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                    <rect width="32" height="32" rx="6" fill="url(#gradient)"/>
-                    <path d="M8 20L16 8L24 20H8Z" fill="white" opacity="0.9"/>
-                    <defs>
-                        <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
-                            <stop offset="0%" stop-color="#6366f1"/>
-                            <stop offset="100%" stop-color="#8b5cf6"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <h1 class="logo-text text-2xl bold">Anon UI</h1>
-            </div>
+    <div class="container h-screen w-full flex flex-column items-center gap-16 bg-secondary">
+        <header>
+            <nav class="navbar w-full flex justify-between items-center py-5">
+                <div class="logo-wrapper">
+                    <h1 class="logo-text text-2xl bold">Anon UI</h1>
+                </div>
 
-            <ul class="nav-links">
-                <li><a href="#features" class="nav-link text-lg">Features</a></li>
-                <li><a href="https://github.com/DanonymousCoder/Anon-UI" class="nav-link text-lg">GitHub</a></li>
-                <li><a href="/docs.html" class="btn-primary px-6 py-3 rounded-lg text-lg text-tertiary bold">Get Started</a></li>
-            </ul>
-        </nav>
+                <ul class="nav-links flex gap-5">
+                    <li><a href="#features" class="nav-link text-lg">Features</a></li>
+                    <li><a href="https://github.com/DanonymousCoder/Anon-UI" class="nav-link text-lg">GitHub</a></li>
+                    <li><a href="/docs.html" class="btn-primary px-6 py-3 rounded-lg text-lg bold">Get Started</a></li>
+                </ul>
+            </nav>
         
-        <div class="hero-section w-full center">
-            <div class="hero-badge">
-                <span class="badge-text">🚀 v0.1.1 Now Available</span>
-            </div>
-            <h1 class="hero-title">Build Faster with<br/><span class="gradient-text">Anon UI</span></h1>
-            <p class="hero-description text-lg">A lightweight, dark-mode-first CSS framework built for speed, clarity, and experimentation. Crafted for developers who want power without the noise.</p>
-            
-            <div class="hero-cta flex gap-3 items-center">
-                <a href="/docs.html" class="btn-cta-primary px-8 py-4 rounded-lg text-lg bold">Start Building</a>
-                <a href="#features" class="btn-cta-secondary px-8 py-4 rounded-lg text-lg bold">Learn More</a>
-            </div>
+            <div class="hero-section w-full center flex flex-column gap-4">
+                <div class="hero-badge">
+                    <span class="badge-text p-3">v0.1.1 Now Available</span>
+                </div>
+                <h1 class="hero-title">Build Faster with<br/><span class="gradient-text text-accent">Anon UI</span></h1>
+                <p class="hero-description text-lg">A lightweight, dark-mode-first CSS framework built for speed, clarity, and experimentation. Crafted for developers who want power without the noise.</p>
+                
+                <div class="hero-cta flex gap-3 justify-center items-center">
+                    <a href="/docs.html" class="btn-cta-primary px-8 py-4 rounded-lg text-lg bold">Start Building</a>
+                    <a href="#features" class="btn-cta-secondary px-8 py-4 rounded-lg text-lg bold">Learn More</a>
+                </div>
 
-            <div class="stats-grid flex gap-6">
-                <div class="stat-card">
-                    <h3 class="stat-number text-3xl bold">15KB</h3>
-                    <p class="stat-label">Minified Size</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number text-3xl bold">100+</h3>
-                    <p class="stat-label">Utility Classes</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number text-3xl bold">0</h3>
-                    <p class="stat-label">Dependencies</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="features" class="features-section w-full">
-            <h2 class="section-title text-3xl bold center">Why Choose Anon UI?</h2>
-            <div class="features-grid flex gap-4">
-                <div class="feature-card bg-accent rounded-lg">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
+                <div class="stats-grid flex justify-center gap-16">
+                    <div class="stat-card p-10 flex flex-column items-start bg-white">
+                        <h3 class="stat-number text-3xl bold">15KB</h3>
+                        <p class="stat-label">Minified Size</p>
                     </div>
+                    <div class="stat-card p-10 flex flex-column items-start bg-white">
+                        <h3 class="stat-number text-3xl bold">100+</h3>
+                        <p class="stat-label">Utility Classes</p>
+                    </div>
+                    <div class="stat-card p-10 flex flex-column items-start bg-white">
+                        <h3 class="stat-number text-3xl bold">0</h3>
+                        <p class="stat-label">Dependencies</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="features" class="features-section w-8 flex flex-column gap-16">
+            <h2 class="section-title text-3xl bold center">Why Choose Anon UI?</h2>
+            <div class="features-grid flex gap-6 items-start justify-center">
+                <div class="feature-card rounded-lg">
                     <h3 class="feature-title text-xl bold">Bracket-Based Responsive Syntax</h3>
                     <p class="feature-description">Write cleaner responsive code with [ ] utilities instead of repetitive breakpoint prefixes. Reduce clutter and focus on intention — md-[p-4 text-center bg-accent] compiles into optimized, predictable CSS.</p>
                 </div>
                 
-                <div class="feature-card bg-accent rounded-lg">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                            <polyline points="21 15 16 10 5 21"></polyline>
-                        </svg>
-                    </div>
+                <div class="feature-card rounded-lg">
                     <h3 class="feature-title text-xl bold">Dark-Mode-First Design System</h3>
                     <p class="feature-description">A consistent, modern palette inspired by dark UI, neon accents, and cyber interfaces. Perfect for dashboards, tools, and sleek web apps — built on custom CSS variables that stay predictable and themeable.</p>
                 </div>
                 
-                <div class="feature-card bg-accent rounded-lg">
-                    <div class="feature-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="12 6 12 12 16 14"></polyline>
-                        </svg>
-                    </div>
+                <div class="feature-card rounded-lg">
                     <h3 class="feature-title text-xl bold">Tiny, Utility-First Core</h3>
                     <p class="feature-description">A fast, minimal utility engine that gives you the power of Tailwind without the bulk. Every class is handcrafted for clarity, extendability, and learning how frameworks work from the inside.</p>
                 </div>
@@ -101,8 +74,8 @@
         </div>
 
         <footer class="footer w-full center">
-            <p class="footer-text">Built with ❤️ by the Anon UI Team</p>
-            <p class="footer-copyright">© 2025 Anon UI. Open Source MIT License.</p>
+            <p class="footer-text">Built by D'anonymousCoder</p>
+            <p class="footer-copyright">&copy 2025 Anon UI. Open Source MIT License.</p>
         </footer>
     </div>
 </body>
