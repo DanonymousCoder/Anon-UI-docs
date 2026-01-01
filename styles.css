@@ -36,6 +36,7 @@ body {
 
 .container {
     background-color: #202430;
+    gap: 12em;
 }
 
 header {
@@ -52,8 +53,19 @@ header {
 
 .hero-title span {
     color: #0042A8;
+    display: inline-block;
 }
 
 .stat-card {
     background-color: #FFFFFF;
+    color: #25324B;
+}
+
+.feature-card {
+    background-color: #0042A8;
+    height: 300px;
+}
+
+.hero-cta a {
+    background-color: #4640DE;
 }
