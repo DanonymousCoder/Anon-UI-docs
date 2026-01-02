@@ -56,16 +56,22 @@ header {
     display: inline-block;
 }
 
+.stats-grid {
+    grid-template-columns: 1fr  1fr 1fr;
+}
+
 .stat-card {
     background-color: #FFFFFF;
     color: #25324B;
-}
-
-.feature-card {
-    background-color: #0042A8;
     height: 300px;
 }
 
-.hero-cta a {
+.feature-card {
+    background-color: #4640DE;
+    color: #FFFFFF;
+    height: 300px;
+}
+
+.hero-cta-primary {
     background-color: #4640DE;
 }
