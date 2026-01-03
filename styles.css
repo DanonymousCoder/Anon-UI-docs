@@ -37,12 +37,25 @@ body {
 .container {
     background-color: #202430;
     gap: 12em;
-}
-
-header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500x;
+    margin: 0 auto;
+}
+
+header,
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 6em;
+}
+
+.btn-primary {
+    background-color: #4640DE;
 }
 
 .badge-text {
@@ -52,7 +65,7 @@ header {
 }
 
 .hero-title span {
-    color: #0042A8;
+    color: #26A4FF;
     display: inline-block;
 }
 
@@ -64,14 +77,26 @@ header {
     background-color: #FFFFFF;
     color: #25324B;
     height: 300px;
+    cursor: pointer;
 }
 
 .feature-card {
     background-color: #4640DE;
     color: #FFFFFF;
     height: 300px;
+    cursor: pointer;
 }
 
-.hero-cta-primary {
+.btn-cta-primary {
     background-color: #4640DE;
+}
+
+.btn-cta-secondary {
+    text-decoration: underline;
+    text-decoration-color: #4640DE;
+    color: #4640DE;
+}
+
+.footer-text span {
+    color: #26A4FF;
 }

@@ -11,16 +11,16 @@
 </head>
 <body>
     <div class="container h-screen w-full flex flex-column items-center bg-secondary">
-        <header>
-            <nav class="navbar w-full flex justify-between items-center py-5">
+        <header class="mt-10">
+            <nav class="navbar w-full flex justify-between items-center py-10">
                 <div class="logo-wrapper">
                     <h1 class="logo-text text-2xl bold">Anon UI</h1>
                 </div>
 
-                <ul class="nav-links flex gap-5">
+                <ul class="nav-links flex gap-10">
                     <li><a href="#features" class="nav-link text-lg">Features</a></li>
                     <li><a href="https://github.com/DanonymousCoder/Anon-UI" class="nav-link text-lg">GitHub</a></li>
-                    <li><a href="/docs.html" class="btn-primary px-6 py-3 rounded-lg text-lg bold">Get Started</a></li>
+                    <li><a href="/docs.html" class="btn-primary px-8 py-4 rounded-lg text-lg bold">Get Started</a></li>
                 </ul>
             </nav>
         
@@ -33,7 +33,7 @@
                 
                 <div class="hero-cta flex gap-3 justify-center items-center my-8">
                     <a href="/docs.html" class="btn-cta-primary px-8 py-4 rounded-lg text-lg bold">Start Building</a>
-                    <a href="#features" class="btn-cta-secondary px-8 py-4 rounded-lg text-lg bold">Learn More</a>
+                    <a href="#features" class="btn-cta-secondary px-8 py-4 rounded-lg text-xl bold">Learn More</a>
                 </div>
 
                 <div class="stats-grid grid gap-16 mt-15">
@@ -53,29 +53,31 @@
             </div>
         </header>
 
-        <div id="features" class="features-section w-8 flex flex-column gap-16">
-            <h2 class="section-title text-3xl bold center">Why Choose Anon UI?</h2>
-            <div class="features-grid flex gap-6 items-start justify-center">
-                <div class="feature-card rounded-lg p-10 flex flex-column gap-5">
-                    <h3 class="feature-title text-xl bold">Bracket-Based Responsive Syntax</h3>
-                    <p class="feature-description">Write cleaner responsive code with [ ] utilities instead of repetitive breakpoint prefixes. Reduce clutter and focus on intention — md-[p-4 text-center bg-accent] compiles into optimized, predictable CSS.</p>
-                </div>
-                
-                <div class="feature-card rounded-lg p-10 flex flex-column gap-5">
-                    <h3 class="feature-title text-xl bold">Dark-Mode-First Design System</h3>
-                    <p class="feature-description">A consistent, modern palette inspired by dark UI, neon accents, and cyber interfaces. Perfect for dashboards, tools, and sleek web apps — built on custom CSS variables that stay predictable and themeable.</p>
-                </div>
-                
-                <div class="feature-card rounded-lg p-10 flex flex-column gap-5">
-                    <h3 class="feature-title text-xl bold">Tiny, Utility-First Core</h3>
-                    <p class="feature-description">A fast, minimal utility engine that gives you the power of Tailwind without the bulk. Every class is handcrafted for clarity, extendability, and learning how frameworks work from the inside.</p>
+        <main class="w-full">
+            <div id="features" class="features-section w-8 flex flex-column gap-16">
+                <h2 class="section-title text-3xl bold center">Why Choose Anon UI?</h2>
+                <div class="features-grid flex gap-6 items-start justify-center">
+                    <div class="feature-card rounded-lg p-10 flex flex-column gap-5">
+                        <h3 class="feature-title text-xl bold">Bracket-Based Responsive Syntax</h3>
+                        <p class="feature-description">Write cleaner responsive code with [ ] utilities instead of repetitive breakpoint prefixes. Reduce clutter and focus on intention — md-[p-4 text-center bg-accent] compiles into optimized, predictable CSS.</p>
+                    </div>
+                    
+                    <div class="feature-card rounded-lg p-10 flex flex-column gap-5">
+                        <h3 class="feature-title text-xl bold">Dark-Mode-First Design System</h3>
+                        <p class="feature-description">A consistent, modern palette inspired by dark UI, neon accents, and cyber interfaces. Perfect for dashboards, tools, and sleek web apps — built on custom CSS variables that stay predictable and themeable.</p>
+                    </div>
+                    
+                    <div class="feature-card rounded-lg p-10 flex flex-column gap-5">
+                        <h3 class="feature-title text-xl bold">Tiny, Utility-First Core</h3>
+                        <p class="feature-description">A fast, minimal utility engine that gives you the power of Tailwind without the bulk. Every class is handcrafted for clarity, extendability, and learning how frameworks work from the inside.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
 
-        <footer class="footer w-full center">
-            <p class="footer-text">Built by D'anonymousCoder</p>
-            <p class="footer-copyright">&copy 2025 Anon UI. Open Source MIT License.</p>
+        <footer class="footer w-full center flex justify-center align-center gap-3">
+            <p class="footer-text text-md">Built by <span> D'anonymousCoder</span>.</p>
+            <p class="footer-copyright text-md">&copy 2025 Anon UI. Open Source MIT License.</p>
         </footer>
     </div>
 </body>
