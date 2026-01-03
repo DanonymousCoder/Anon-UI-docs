@@ -9,12 +9,75 @@
     <title>Anon UI docs</title>
 </head>
 <body>
-    <div class="container">
-        <h1 id="wip-text"></h1>
+    <div class="container h-screen w-full flex flex-column items-center bg-secondary">
+        <header class="mt-10">
+            <nav class="navbar w-full flex justify-between items-center py-10">
+                <div class="logo-wrapper">
+                    <h1 class="logo-text text-2xl bold">Anon UI</h1>
+                </div>
+
+                <ul class="nav-links flex gap-10">
+                    <li><a href="#features" class="nav-link text-lg">Features</a></li>
+                    <li><a href="https://github.com/DanonymousCoder/Anon-UI" class="nav-link text-lg">GitHub</a></li>
+                    <li><a href="/docs.html" class="btn-primary px-8 py-4 rounded-lg text-lg bold">Get Started</a></li>
+                </ul>
+            </nav>
+        
+            <div class="hero-section w-full center flex flex-column gap-4">
+                <div class="hero-badge">
+                    <span class="badge-text p-3">v0.1.1 Now Available</span>
+                </div>
+                <h1 class="hero-title text-3xl">Build Faster with<br/><span class="gradient-text text-accent">Anon UI</span></h1>
+                <p class="hero-description text-lg">A lightweight, dark-mode-first CSS framework built for speed, clarity, and experimentation. Crafted for developers who want power without the noise.</p>
+                
+                <div class="hero-cta flex gap-3 justify-center items-center my-8">
+                    <a href="/docs.html" class="btn-cta-primary px-8 py-4 rounded-lg text-lg bold">Start Building</a>
+                    <a href="#features" class="btn-cta-secondary px-8 py-4 rounded-lg text-xl bold">Learn More</a>
+                </div>
+
+                <div class="stats-grid grid gap-16 mt-15">
+                    <div class="stat-card p-10 flex flex-column items-center justify-center">
+                        <h3 class="stat-number text-3xl bold">15KB</h3>
+                        <p class="stat-label">Minified Size</p>
+                    </div>
+                    <div class="stat-card p-10 flex flex-column items-center justify-center">
+                        <h3 class="stat-number text-3xl bold">100+</h3>
+                        <p class="stat-label">Utility Classes</p>
+                    </div>
+                    <div class="stat-card p-10 flex flex-column items-center justify-center">
+                        <h3 class="stat-number text-3xl bold">0</h3>
+                        <p class="stat-label">Dependencies</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="w-full">
+            <div id="features" class="features-section w-8 flex flex-column gap-16">
+                <h2 class="section-title text-3xl bold center">Why Choose Anon UI?</h2>
+                <div class="features-grid flex gap-6 items-start justify-center">
+                    <div class="feature-card rounded-lg p-10 flex flex-column gap-5">
+                        <h3 class="feature-title text-xl bold">Bracket-Based Responsive Syntax</h3>
+                        <p class="feature-description">Write cleaner responsive code with [ ] utilities instead of repetitive breakpoint prefixes. Reduce clutter and focus on intention — md-[p-4 text-center bg-accent] compiles into optimized, predictable CSS.</p>
+                    </div>
+                    
+                    <div class="feature-card rounded-lg p-10 flex flex-column gap-5">
+                        <h3 class="feature-title text-xl bold">Dark-Mode-First Design System</h3>
+                        <p class="feature-description">A consistent, modern palette inspired by dark UI, neon accents, and cyber interfaces. Perfect for dashboards, tools, and sleek web apps — built on custom CSS variables that stay predictable and themeable.</p>
+                    </div>
+                    
+                    <div class="feature-card rounded-lg p-10 flex flex-column gap-5">
+                        <h3 class="feature-title text-xl bold">Tiny, Utility-First Core</h3>
+                        <p class="feature-description">A fast, minimal utility engine that gives you the power of Tailwind without the bulk. Every class is handcrafted for clarity, extendability, and learning how frameworks work from the inside.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer w-full center flex justify-center align-center gap-3">
+            <p class="footer-text text-md">Built by <span> D'anonymousCoder</span>.</p>
+            <p class="footer-copyright text-md">&copy 2025 Anon UI. Open Source MIT License.</p>
+        </footer>
     </div>
-
-
-    <!-- Link to JS -->
-     <script src="script.js"></script>
 </body>
 </html>
