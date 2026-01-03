@@ -1,5 +1,6 @@
 let mains = document.querySelectorAll("main");
 let asideLinks = document.querySelectorAll(".sidebar-link");
+let wipText = document.getElementById("wip-text");
 
 
 asideLinks.forEach(asideLink => {
@@ -17,3 +18,37 @@ asideLinks.forEach(asideLink => {
         })
     })
 })
+
+
+let text = "Work in progress ", speed = 150, i = 0, un_i = 17;
+
+function displayText() {
+    if (i < text.length) {
+        wipText.textContent += text.charAt(i);
+        i++;
+         if (i == 17) {
+            un_i = 17;
+            removeText();
+        }
+        setTimeout(displayText, speed);
+    }
+}
+
+function removeText() {
+    if (un_i > 0) {
+        
+        wipText.textContent = wipText.textContent.slice(0, -1);
+        // console.log(wip)
+        un_i--;
+
+        if (un_i == 0) {
+            i = 0;
+            un_i = 0;
+            displayText();
+        }
+
+        setTimeout(removeText, speed);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", displayText);
