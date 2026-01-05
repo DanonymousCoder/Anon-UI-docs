@@ -1,0 +1,18 @@
+/* SM Breakpoint (600px) */
+@media (min-width: 600px) {
+ [class*="sm-["][class*="text-lg"] {
+     font-size: var(--text-lg);
+}
+
+ [class*="sm-["][class*="text-md"] {
+     font-size: var(--text-md);
+}
+
+ [class*="sm-["][class*="text-sm"] {
+     font-size: var(--text-sm);
+}
+
+ [class*="sm-["][class*="p-3"] {
+     padding: var(--space-3);
+}
+}
