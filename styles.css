@@ -8,7 +8,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background-color: #202430;
+    background-color: #202430 !important;
 }
 
 ::-webkit-scrollbar {
@@ -41,8 +41,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1500x;
     margin: 0 auto;
+    min-height: 100vh;
+    max-width: 1500px;
 }
 
 header,
@@ -70,7 +71,7 @@ main {
 }
 
 .stats-grid {
-    grid-template-columns: 1fr  1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .stat-card {
@@ -83,7 +84,7 @@ main {
 .feature-card {
     background-color: #4640DE;
     color: #FFFFFF;
-    height: 300px;
+    min-height: 300px;
     cursor: pointer;
 }
 
@@ -99,4 +100,67 @@ main {
 
 .footer-text span {
     color: #26A4FF;
+}
+
+.desktop-hide {
+    display: none;
+}
+
+
+
+
+@media (max-width: 320px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        flex-direction: column !important;
+    }
+
+    .feature-card,
+    .stat-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    .desktop-hide {
+        display: block;
+    }
+}
+
+@media (max-width: 950px) {
+    .stats-grid {
+        gap: 2em !important;
+    }
+
+    .stat-card {
+        gap: 1em;
+        height: 200px;
+    }
+
+    .stat-number {
+        font-size: 2rem !important;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+    }
+
+    .features-section .section-title {
+        font-size: 3.5rem !important;
+    }
+
+    .feature-card {
+        padding: 3em 1.5em !important;
+    }
+
+    .feature-title {
+        font-size: 1.2rem !important;
+    }
+
+    .feature-description {
+        font-size: 1rem !important;
+    }
 }
